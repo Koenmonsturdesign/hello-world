@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="opmaak1.1.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<title>Home</title>
+<!-- Navigation -->
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+<body>
+<div id="section2">
+<!-- Navigation -->
+<nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="instruments.htm">Instruments</a>
+  <a href="bands.htm">Bands</a>
+  <a href="about.htm">About</a>
+</div><br>
+<span style="font-size:30px;cursor:pointer; margin-left:2.5%" onclick="openNav()">&#9776; Menu</span>
+</nav>
+</div>
+<!-- Slide Show -->
+<div id="section2">
+<br><br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="index_slide1.jpg" style="width:100%" alt="naam1">
+  <div class="text">Worship music</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="index_slide2.jpg" style="width:100%" alt="naam2">
+  <div class="text">Cave music</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="index_slide3.jpg" style="width:100%" alt="naam3">
+  <div class="text">Pop music</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+<div id="section2">
+<!-- Text -->
+<div align="center">
+<section style="max-width:600px">
+  <h2>HOME</h2>
+  <p  id="p2"><i>We love music</i></p>
+  <p>Op deze website kun je informatie vinden over mijn grootste hobby, muziek. Ik laat zien welke instrumenten ik speel, en wil spelen, in wat voor bandjes ik speel, welke bands ik zelf tof vind en daarna vertel ik nog wat over mezelf. Ik heb deze website gemaakt voor een informatica opdracht. De opdracht was een site te maken, die voldeed aan de huidige standaarden op het gebied van design en programeren. </p>
+</section>
+<br></div></div></div><br><br>
+
+<!-- Band Members -->
+<section>
+  <div class="card">
+  <img src="index_img1.jpg" alt="Spotify" style="width:100%" id="img2">
+  <div class="container">
+    <h4><b>Spotify</b></h4> 
+    <p>Op spotify luister ik naar mijn favoriete muziek, en vind ik het leuk om nieuwe muziek te ontdekken.</p> 
+  </div>
+</div>
+
+
+<div class="card2">
+  <img src="index_img2.jpg" alt="Bladmuziek" style="width:100%" id="img2">
+  <div class="container">
+    <h4><b>Bladmuziek</b></h4> 
+    <p>Toen ik 8 jaar oud was leerde ik noten lezen bij AMV keyboard les, de noten zijn een soort taal voor muziek.</p> 
+  </div>
+</div>
+
+
+<div class="card3">
+  <img src="index_img3.png" alt="Youtube" style="width:100%" id="img2">
+  <div class="container">
+    <h4><b>Youtube</b></h4> 
+    <p>Ik vind het op youtube tof om te zien hoe muziek en beeld samen komen, en het echt iets toevoegt aan elkaar.</p> 
+  </div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer-basic-centered">
+
+			<p class="footer-company-motto">Music is a lifestyle</p>
+
+			<p class="footer-links">
+				<a href="index.html">Home</a>
+				·
+				<a href="instruments.htm">Instruments</a>
+				·
+				<a href="bands.htm">Bands</a>
+				·
+				<a href="about.htm">About</a>
+			</p>
+
+			<p class="footer-company-name">Koenmoestuin webdesign &copy; 2016</p>
+
+</footer>
+
+</body>
+</html>
+
